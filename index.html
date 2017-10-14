@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            #buttonstyle {
+            background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    width:100%;
+    border-radius:5px;
+            }
+            #marq{
+                background-color:yellow;
+            }
+        </style>
+    <marquee id="marq">Paying your Taxes  just a click away!</marquee>
+    <center><h1>Welcome To Java Bank Of India</h1></center>
+    </head>
+
+<body>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/img1.JPG" style="width:100%">
+  <img class="mySlides" src="images/img2.JPG" style="width:100%">
+ 
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<div class="">
+
+    <form action="CheckValidation"method="Post">
+<table align="center">
+<tr>
+<th>Enter your Username</th>
+<td><input type="text"placeholder="Username" name="userN"></td>
+</tr>
+<tr>
+<th>Enter your Password</th>
+<td><input type="password" name="userP"></td>
+</tr>
+<tr>
+    <td><input type="Submit"value="Login"name="loginsubmit" id="buttonstyle"></td><td><input type="Submit"value="Sign-up"name="signupsubmit"id="buttonstyle"></td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>

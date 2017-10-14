@@ -1,0 +1,63 @@
+
+<html>
+<title>Java Bank SIGN-UP</title>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+    <h1 style="background-color:#5bc0de ;color:white;"><center>JAVA BANK OF INDIA</font></center></h1>
+	<center><h1 class="btn-danger">Sign-Up Form</h1></center>
+    <br><br><br><br>
+    <form action="Signup"method="Post">
+	
+    <table class="table">
+        
+		<tr class="bg-success">
+            <th>Enter Your Name</th>
+            <td><input type="text"placeholder="Enter Your Name"name="signup-name"size=100%>
+            
+        </tr>
+         <tr style="color:black;" class="bg-primary">
+            <th>UserName </th>
+            <td><input type="text"placeholder="Enter Your UserName"name="signup-username"size=100%>
+            
+        </tr>
+         <tr class="bg-info">
+            <th>Password</th>
+            <td><input type="password"placeholder="Enter Your Password"name="signup-password"size=100%>
+            
+        </tr>
+         <tr class="bg-warning">
+            <th>Re-Enter Password</th>
+            <td><input type="password"placeholder="Re-Enter Your Password"name="signup-repassword"size=100%>
+            
+        </tr>
+         <tr class="bg-danger">
+            <th>Select Your Gender </th>
+            <td><input type="radio"name="sex"value="Male">Male<input type="radio"name="sex"value="Female">Female</td>
+            
+        </tr>
+        <tr class="bg-info">
+            <th>Select Your Account Type</th>
+            <td> <select name="Account Type">
+    <option value="savings">Savings Account</option>
+    <option value="current">Current Account</option>
+    </select></td>        
+        </tr>
+        <tr>
+            
+            <td><input type="submit"value="Signup"name="signupbtn" class="btn btn-info"></td>
+            <td>
+            <input type="submit"value="Go back"name="backsignup"class="btn btn-info">
+            </td>
+        </tr>
+		
+    </table>
+    </form>
+    </body>
+</html>
+
+
